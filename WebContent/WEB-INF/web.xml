@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>jsptute</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+<servlet>
+<servlet-name>first</servlet-name>
+<servlet-class>com.jsptute.first</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>first</servlet-name>
+<url-pattern>/first</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>generic</servlet-name>
+<servlet-class>com.jsptute.genericclass</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>generic</servlet-name>
+<url-pattern>/generic</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>square</servlet-name>
+<servlet-class>com.jsptute.squareServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>square</servlet-name>
+<url-pattern>/sq</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>configs</servlet-name>
+<servlet-class>com.jsptute.configcontext</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>configs</servlet-name>
+<url-pattern>/configs</url-pattern>
+</servlet-mapping>
+
+
+<context-param>
+<param-name>phone</param-name>
+<param-value>samsung</param-value>
+</context-param>
+
+<context-param>
+<param-name>browser</param-name>
+<param-value>firefox</param-value>
+
+</context-param>
+
+
+</web-app>
